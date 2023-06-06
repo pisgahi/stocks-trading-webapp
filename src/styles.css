@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLOR VARIABLES */
+
+:root {
+    --grayBackColor: #ECEDF1;
+    --generalTextColor: #96A0B5;
+    --baseColor: #49BEB7;
+}
+
+.green-text {
+    color: var(--baseColor);
+}
+
+/* SIDE BAR */
+
+.side-bar__container {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+.logo__img--container {
+    border-radius: 20px;
+    background-color: var(--grayBackColor);
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo__img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.logo__title {
+    font-size: 20px;
+}
+
+/* Stock Snippet */
+
+.stock-snippet--container {
+    border-radius: 20px;
+    background-color: var(--grayBackColor);
+    width: 240px;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.stock-snippet--container h4 {
+    line-height: 1.5;
+}
+
+.name__value--container,
+.percent-change__price-change--container {
+    height: 55px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.percent-change__price-change--container {
+    align-items: flex-end;
+}
+
+/* Menu */
+
+.sidebar__menu--container {
+    width: 240px;
+    margin-top: 15px;
+}
+
+.menu__options--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__options {
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--generalTextColor);
+}
+
+.fa__icon--sidebar {
+    margin-right: 25px;
+}
+
+.settings__page {
+    cursor: not-allowed;
+}
+
+.wallet__balance--super__container {
+    width: 240px;
+}
+
+.wallet__balance--container {
+    background-color: var(--grayBackColor);
+    border-radius: 20px;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    margin-top: 55px;
+}
+
+.wallet__balance {
+    font-size: 20px;
+}
+
+.wallet__balance,
+.balance__ammount {
+    color: var(--generalTextColor);
+}
+
+/* HOME LAYOUT */
+
+.home__layout--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection--title {
+    width: 780px;
+    margin: 12px 0 12px 22px;
+}
+
+.user__snippet--container {
+    width: 300px;
+    height: 65px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main__section--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock-card__collection {
+    width: 845px;
+    display: flex;
+    align-items: center;
+}
+
+.trending__stock__collection {
+    width: 845px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.transaction__collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main__without__header--container {
+    display: flex;
+
+}
+
+.main__section {
+    display: flex;
+}
+
+/* User Icons */
+
+.user__icons--container {
+    width: 135px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.fa__user-snippet {
+    font-size: 20px;
+    color: var(--generalTextColor);
+}
+
+.user__icons {
+    border-radius: 50px;
+    background-color: var(--grayBackColor);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User Info */
+
+.user__info {
+    width: 155px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user__info h4, h5 {
+    line-height: 1.5;
+}
+
+.full__name {
+    font-size: 18px;
+}
+
+.user__email {
+    color: var(--generalTextColor);
+}
+
+/* HEADER */
+
+.header__container {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search */
+
+.search__container {
+    border-radius: 15px;
+    background-color: var(--grayBackColor);
+    height: 50px;
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.magnifyer__container {
+    border-radius: 15px;
+    width: 35px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.fa__magnifying {
+    font-size: 20px;
+    color: var(--generalTextColor);
+}
+
+.search__input {
+    border-radius: 15px;
+    background-color: var(--grayBackColor);
+    height: 45px;
+    width: 480px;
+    font-size: 16px;
+    color: var(--generalTextColor);
+    border: none;
+    outline: none;
+}
+
+/* STOCK CARD */
+
+.stock__card {
+    border-radius: 20px;
+    background-color: var(--grayBackColor);
+    width: 245px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.stock__card h4 {
+    line-height: 1.5;
+}
+
+.stock__card h5 {
+    line-height: 1.5;
+}
+
+.stock__name__value__owned {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.owned__info {
+    height: 50px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stock__name--container {
+    width: 140px;
+}
+
+.percent__price-change__graph {
+    width: 85px;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.percent__price--container {
+    height: 50px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.percent__price-change__graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stock-card--container,
+.graph {
+    height: 50px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.graph {
+    justify-content: center;
+}
+
+.stock__name--container {
+    border-radius: 20px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    color: var(--grayBackColor);
+}
+
+.stock__name,
+.owned__title,
+.value__owned {
+    margin-left: 6px;
+}
+
+.owned__title {
+    color: var(--generalTextColor);
+}
+
+.percent,
+.price-change,
+.owned__title {
+    font-size: 13px;
+}
+
+/* PORTFOLIO SIDE */
+
+.portfolio__side--container {
+    width: 275px;
+    height: 635px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio__side--container h5 {
+    line-height: 2;
+    color: var(--generalTextColor);
+}
+
+.my__portfolio {
+    width: 240px;
+    margin-bottom: 20px;
+    margin: 25px 0;
+}
+
+.my__portfolio--title {
+    margin-bottom: 30px;
+}
+
+.portfolio__card {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.fa__my__portfolio--container {
+    background-color: var(--grayBackColor);
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa__my__portfolio {
+    font-size: 20px;
+    color: var(--generalTextColor);
+}
+
+.gain__container {
+    width: 150px;
+    margin-right: 25px;
+}
+
+/* Market Cap Section */
+
+.my__portfolio--market-cap {
+    width: 240px;
+}
+
+.fa__my__portfolio--container--market-cap {
+    background-color: var(--grayBackColor);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa__portfolio--market__cap {
+    font-size: 20px;
+    color: var(--baseColor);
+}
+
+.fa__arrow__portfolio--market__cap {
+    font-size: 20px;
+    color: var(--baseColor);
+}
+
+.fa__portfolio--market__cap2 {
+    font-size: 20px;
+    color: var(--generalTextColor);
+    height: 30px;
+    width: 50px;
+}
+
+.gain__container--market-cap {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa2__my__portfolio--container {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__card--market-cap {
+    background-color: var(--grayBackColor);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* TRENDING STOCK */
+
+.trending__stock--container {
+    border-radius: 20px;
+    background-color: var(--grayBackColor);
+    width: 150px;
+    height: 180px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.stock__logo {
+    width: 75px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 20px;
+}
+
+.fa__trending--container {
+    border-radius: 50px;
+    background-color: var(--grayBackColor);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px var(--generalTextColor);
+}
+
+.fa__trending {
+    font-size: 22px;
+    color: var(--baseColor);
+}
+
+.stock__name__trending--container {
+    width: 75px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 20px;
+}
+
+.price__percent__trending--container {
+    width: 95px;
+    height: 55px;
+    margin-left: 20px;
+}
+
+.price__percent__trending--container {
+    line-height: 1.5;
+}
+
+.day__change {
+    color: var(--generalTextColor);
+    font-size: 12.5px;
+}
+
+.stock__name--trending,
+.stock__price {
+    font-size: 20px;
+}
+
+.percent__trending {
+    font-size: 13px;
+}
+
+/* TRANSACTION SNIPPET */
+
+/* Containers */
+
+.transaction__snippet--container {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction__indicator--container {
+    width: 275px;
+    display: flex;
+    justify-content: center;
+}
+
+.transaction__status--container {
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction__amount--container {
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Children */
+
+.fa__transaction--container {
+    background-color: var(--grayBackColor);
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.fa__transaction {
+    font-size: 20px;
+    color: var(--generalTextColor);
+}
+
+.transaction__title--container {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.transaction__title--container h3 {
+    line-height: 1.5;
+}
+
+.transaction__title {
+    font-size: 15px;
+}
+
+.transaction__type {
+    color: var(--generalTextColor);
+}
+
+.transaction__status {
+    font-size: 15px;
+    color: var(--generalTextColor);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction__ammount {
+    font-size: 16px;
+    color: var(--generalTextColor);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HELP PAGE */
+
+.help__name,
+.help__email,
+.help__text-area {
+    border: 0;
+    border-bottom: 2px solid var(--baseColor);
+    width: 75%;
+    margin-top: 20px;
+    outline: none;
+}
+
+.help__items--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.help__forms--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help__title {
+    width: 780px;
+    margin: 35px 0 -25px 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.help__forms--container textarea {
+    resize: none;
+    padding: 0 10px;
+}
+
+.help__name,
+.help__email {
+    height: 45px;
+    padding: 0 8px;
+}
+
+.help__text-area {
+    padding: 10px;
+    height: 250px;
+    border-bottom: 2px solid var(--baseColor);
+}
+
+.help__forms--container {
+    margin-top: 25px;
+    margin-top: 50px;
+}
+
+.send__button {
+    width: 75%;
+    height: 40px;
+    border: 1px solid var(--baseColor);
+    border: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 45px;
+    transition: all 400ms ease;
+}
+
+.send__button:hover {
+    background-color: var(--baseColor);
+    color: white;
+}
